@@ -1,44 +1,22 @@
-Find UNA members 🡺 Extract UNA members 🡺 RTB
-(Optional) Destroy AA
-(Optional) Kill high ranking member of Tura/SFIA
+                                        🡺 Support EOD Team 🡺 Defend EOD Team 🡺 Defend Mhamid 🡺 Pickup POI 🡺 Dropoff POI 🡻
+Deliver Supplies 🡺 Get Secondary Brief                                                                                      🡺 RTB for Debrief
+                                        🡺 Pickup POI 🡺 Dropoff POI 🡺 Defend Mhamid 🡺 Support EOD Team 🡺 Defend EOD Team 🡹
 
 
 1st Briefing:
     General:
         • We're working as an independent Faction
-            • Few NATO and UNA operatives know of our presence
             • NATO and UNA have been cooperating
-            • Tura/SFIA forces have attacked UNA personnel
             • Expect attacks by Tura/SFIA
             • You may RTB anytime to rearm
+            • Opfor forces have been supporting independent forces
         • Enemy types to expect:
             • Infantry
             • Technicals
             • Few APCs
             • Prior use of IEDs
-            • SFIA forces stole a helicopter it was last seen circling Bir-Dakhla
-            • Known checkpoints are marked on the map
-            • Check your fire civilians are still in the area
-            • Enemy forces have redeployed into cities you've attack before
-        • Civilians are still in cities check your fire
-
-    Extract UNA members:
-        • Intel Indicates that UNA is in Bir-Dakhla
-        • Considerable defences
-        • Analysts marked the estimated position on the map
-
-    Support:
-        • In very dire situations a Forward Arming Refueling Truck (FART) can be provided
+            • Known Enemy checkpoints are marked on the map
+            • Known Enemy movements are marked on the map
+            • Civilians have remained in contested cities
 
 Intermissions:
-    After UNA member saved:
-        • Bring UNA member to Airport
-        • Contact will be waiting at marked position
-        • RTB
-    When Additional Missions:
-        • IMPORTANT:::: DELETE WAYPOINT
-        • Convoy is on the move so destroy it first
-            • Destroy Convoy transport truck
-            • Main Road going from North to South
-        • Seize Helicopter at improvised airfield
-        • When actually starting convoy mission delete Waypoint

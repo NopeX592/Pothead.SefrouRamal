@@ -1,12 +1,11 @@
-
 //Mission Settings
-briefingName = "Extraction Part 2";
+briefingName = "Pothead";
 onLoadMissionTime = 1;
 
 author				= "Nope.X";
-onLoadName			= "Extraction Part 2";
-onLoadMission		= "You're playing as a group of contractors trying to save an UNA member from the hands of Terrorist forces.";
-overviewText		= "You're playing as a group of contractors trying to save an UNA member from the hands of Terrorist forces.";
+onLoadName			= "Pothead";
+onLoadMission		= "You're playing as a group of contractors trying tasked with supporting NATO forces by transporting equipment.";
+overviewText		= "You're playing as a group of contractors trying tasked with supporting NATO forces by transporting equipment.";
 
 class Header
 {
