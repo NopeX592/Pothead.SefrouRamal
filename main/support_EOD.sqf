@@ -9,7 +9,7 @@ publicVariableServer "task_2_2_qrf";
 task_2_1 = player createSimpleTask ["Clear M'Semrir"];
 	task_2_1 setSimpleTaskDescription ["Clear the town of M'Semrir for the EOD team.","Clear M'Semrir",""];
 	task_2_1 setSimpleTaskDestination (getMarkerPos "clear_EOD");
-	task_2_1 setSimpleTaskType "whiteboard";
+	task_2_1 setSimpleTaskType "attack";
 	task_2_1 setTaskState "Assigned";
 	["TaskAssigned",["","Clear M'Semrir"]] call BIS_fnc_showNotification;
 

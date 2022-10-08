@@ -7,7 +7,7 @@ publicVariableServer "task_1_1_fail";
 task_1_1 = player createSimpleTask ["Deliver Supplies"];
 	task_1_1 setSimpleTaskDescription ["Deliver the Supplies to Mhamid.","Deliver the Supplies to Mhamid",""];
 	task_1_1 setSimpleTaskDestination (getMarkerPos "deliver_marker");
-	task_1_1 setSimpleTaskType "run";
+	task_1_1 setSimpleTaskType "navigate";
 	task_1_1 setTaskState "Created";
 
 while {_run} do {

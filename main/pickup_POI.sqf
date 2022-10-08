@@ -5,7 +5,7 @@ publicVariableServer "task_3_1_skip";
 task_3_1 = player createSimpleTask ["Pickup POI"];
 	task_3_1 setSimpleTaskDescription ["Pickup the POI from comms Alpha.","Pickup POI",""];
 	task_3_1 setSimpleTaskDestination (getMarkerPos "poi_pickup");
-	task_3_1 setSimpleTaskType "whiteboard";
+	task_3_1 setSimpleTaskType "meet";
 	task_3_1 setTaskState "Assigned";
 	["TaskAssigned",["","Pickup POI"]] call BIS_fnc_showNotification;
 

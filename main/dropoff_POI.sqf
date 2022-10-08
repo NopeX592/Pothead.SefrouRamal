@@ -5,7 +5,7 @@ publicVariableServer "task_3_2_skip";
 task_3_2 = player createSimpleTask ["Dropoff POI"];
 	task_3_2 setSimpleTaskDescription ["Dropoff the POI at our base in Mhamid.","Dropoff POI",""];
 	task_3_2 setSimpleTaskDestination (getMarkerPos "poi_dropoff");
-	task_3_2 setSimpleTaskType "whiteboard";
+	task_3_2 setSimpleTaskType "run";
 	task_3_2 setTaskState "Assigned";
 	["TaskAssigned",["","Dropoff POI"]] call BIS_fnc_showNotification;
 
