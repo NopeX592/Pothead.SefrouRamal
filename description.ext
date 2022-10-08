@@ -1,0 +1,18 @@
+
+//Mission Settings
+briefingName = "Extraction Part 2";
+onLoadMissionTime = 1;
+
+author				= "Nope.X";
+onLoadName			= "Extraction Part 2";
+onLoadMission		= "You're playing as a group of contractors trying to save an UNA member from the hands of Terrorist forces.";
+overviewText		= "You're playing as a group of contractors trying to save an UNA member from the hands of Terrorist forces.";
+
+class Header
+{
+	gameType =  Coop;	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 15;	// maximum number of players the mission supports
+};
+
+enableDebugConsole = 1;
