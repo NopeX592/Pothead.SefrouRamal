@@ -1,8 +1,10 @@
 _run = true;
 task_2_1_skip = false;
 task_2_1_wp_skip = false;
+task_2_2_qrf = false;
 publicVariableServer "task_2_1_skip";
 publicVariableServer "task_2_1_wp_skip";
+publicVariableServer "task_2_2_qrf";
 
 task_2_1 = player createSimpleTask ["Clear M'Semrir"];
 	task_2_1 setSimpleTaskDescription ["Clear the town of M'Semrir for the EOD team.","Clear M'Semrir",""];
@@ -25,6 +27,8 @@ while {_run} do {
 		//Move EOD in to M'Semrir
 		Hunter_EOD setPos hunter_teleport;
 		task_2_1_wp_skip = true;
+		task_2_2_qrf = true;
 		publicVariableServer "task_2_1_wp_skip";
+		publicVariableServer "task_2_2_qrf";
 	};
 };
