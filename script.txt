@@ -1,11 +1,14 @@
-                                        🡺 Support EOD Team 🡺 Defend EOD Team 🡺 Defend Mhamid 🡺 Pickup POI 🡺 Dropoff POI 🡻
-Deliver Supplies 🡺 Get Secondary Brief                                                                                      🡺 RTB for Debrief
-                                        🡺 Pickup POI 🡺 Dropoff POI 🡺 Defend Mhamid 🡺 Support EOD Team 🡺 Defend EOD Team 🡹
+                                        🡺 Support EOD Team 🡺 Defend EOD Team 🡺 RTB to Mhamid 🡺 Defend Mhamid 🡺 Pickup POI 🡺 Dropoff POI 🡻
+Deliver Supplies 🡺 Get Secondary Brief 🡺 Call in Airstrike                                                                                  🡺 RTB for Debrief
+                                        🡺 Pickup POI 🡺 Dropoff POI 🡺 Defend Mhamid 🡺 Support EOD Team 🡺 Defend EOD Team 🡺 RTB to Mhamid 🡹
 
 
 1st Briefing:
     General:
-        • We're working as an independent Faction
+        • NATOs Objective:
+            • NATO forces are in the process of encircling the local Airbase
+            • We're here to support them in any way possible
+        • You're working as military contractors
             • NATO and UNA have been cooperating
             • Expect attacks by Tura/SFIA
             • You may RTB anytime to rearm
