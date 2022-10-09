@@ -4,8 +4,11 @@ onLoadMissionTime = 1;
 
 author				= "Nope.X";
 onLoadName			= "Pothead";
-onLoadMission		= "You're playing as a group of contractors trying tasked with supporting NATO forces by transporting equipment.";
-overviewText		= "You're playing as a group of contractors trying tasked with supporting NATO forces by transporting equipment.";
+onLoadMission		= "You're playing as a group of contractors tasked with supporting NATO forces.";
+overviewText		= "You're playing as a group of contractors tasked with supporting NATO forces.";
+
+loadScreen			= "media\loading.paa";
+overviewPicture		= "media\loading.paa";
 
 class Header
 {
