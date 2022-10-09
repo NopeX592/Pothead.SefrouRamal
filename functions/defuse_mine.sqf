@@ -1,0 +1,1 @@
+Hunter_EODD action ['deactivateMine', Hunter_EODD];
