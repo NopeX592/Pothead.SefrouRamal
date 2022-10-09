@@ -17,4 +17,5 @@ class Header
 	maxPlayers = 15;	// maximum number of players the mission supports
 };
 
+respawnOnStart = 0;
 enableDebugConsole = 1;
