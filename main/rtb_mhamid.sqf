@@ -9,10 +9,6 @@ task_2_3 = player createSimpleTask ["Return to the FOB"];
 	task_2_3 setSimpleTaskDestination (getMarkerPos "rtb_mhamid");
 	task_2_3 setSimpleTaskType "run";
 	task_2_3 setTaskState "Created";
-	
-_UNA_delivery = createMarker ["Return to the FOB", getMarkerPos "rtb_mhamid"];
-	_UNA_delivery setMarkerShape "ELLIPSE";
-	_UNA_delivery setMarkerSize [15, 15];
 
 while {_run} do {
 	if (triggerActivated rtb_mhamid_trigger || (task_2_3_skip)) then {

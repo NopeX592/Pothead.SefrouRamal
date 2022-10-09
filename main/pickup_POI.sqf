@@ -22,5 +22,10 @@ while {_run} do {
 		POI switchMove "";
 		_run = false;
 		[] execVM "main\dropoff_POI.sqf";
+		task_3_1_fin = true;
+		publicVariableServer "task_3_1_fin";
+	};
+	if (task_2_1_fin) then {
+		_run = false;
 	};
 };

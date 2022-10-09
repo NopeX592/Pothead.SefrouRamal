@@ -18,7 +18,11 @@ while {_run} do {
 		task_2_2 setTaskState "Succeeded";
 		["TaskSucceeded",["","Defend the EOD team"]] call BIS_fnc_showNotification;
 		deleteMarker _marker_defend_EOD;
-		[] execVM "main\rtb_mhamid.sqf";
 		_run = false;
+		if !(task_4_1_fin) then {
+			[] execVM "main\rtb_mhamid.sqf";
+		} else {
+			[] execVM "main\rtb_base.sqf";
+		};
 	};
 };
