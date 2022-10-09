@@ -1,0 +1,9 @@
+Make Military marker visible
+Make POI move
+Remove POI Dropoff Marker
+Remove Defend Mhamid Marker
+
+Make Defend check better
+Make Secure M'Semrir finish automatically
+Remove double markers defend EOD
+!alive UXO

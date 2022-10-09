@@ -16,7 +16,7 @@ _marker_defend_EOD = createMarker ["Defend the EOD team", getMarkerPos "defend_E
 [] execVM "main\EOD_Defusing.sqf";
 
 while {_run} do {
-	if ((triggerActivated defend_complete) || (task_2_2_skip)) then {
+	if (task_2_2_skip) then {
 		task_2_2 setTaskState "Succeeded";
 		["TaskSucceeded",["","Defend the EOD team"]] call BIS_fnc_showNotification;
 		deleteMarker _marker_defend_EOD;

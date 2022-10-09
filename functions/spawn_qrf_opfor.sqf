@@ -35,7 +35,7 @@ params [
 			_amount = _amount - 3;
 
 			//Spawn Vehicle
-			if (_amount <= 5) then {
+			if (_amount <= 1) then {
 				vehicleSpawn = "I_G_Offroad_01_F" createVehicle _location_start;
 				} else {
 				vehicleSpawn = "I_G_Van_01_transport_F" createVehicle _location_start;
