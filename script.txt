@@ -28,6 +28,7 @@ Deliver Supplies 🡺 Get Secondary Brief 🡺 Call in Airstrike                
         • MRAPs have been provided and are outside
         • Independent forces are known to operate behind our lines
         • Upon arrival at our base in Mhamid talk to O'Connor
+    • The unarmed Hunter is your respawn vehicle
 !!!FINISH BRIEFING TASK
 task_0_1_skip = true;
 publicVariableServer "task_0_1_skip";
@@ -51,6 +52,7 @@ publicVariableServer "task_0_1_skip";
             • On your way to the POI there is an Enemy held military base
             • We need you to destroy most of the vehicles so that our forces can capture the base
             • I'd reccomend doing this task on your way to the POI
+        • The unarmed Hunter is your respawn vehicle
 !!!FINISH BRIEFING TASK
 task_1_2_skip = true;
 publicVariableServer "task_1_2_skip";

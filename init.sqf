@@ -1,5 +1,6 @@
-[]execVM "main_script.sqf";
-[]execVM "briefing.sqf";
+[] execVM "main_script.sqf";
+[] execVM "briefing.sqf";
+[] execVM "mobile_respawn.sqf";
 
 if (hasInterface) then {
 	[] spawn {

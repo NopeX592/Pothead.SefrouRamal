@@ -13,6 +13,7 @@ format [" Authors: %1<br/><br/>",getText (missionconfigfile >> "author")]+
 "<br/>"+
 "FEATURES:<br/>"+
 "• Virtual Arsenal<br/>"+
+"• Mobile respawn<br/>"+
 "<br/>"+
 "THANKS:<br/>"+
 "• Alex for helping me with programming<br/>"+
@@ -44,6 +45,7 @@ _roles = "<br/>"+
         • MRAPs have been provided and are outside<br/>
         • Independent forces are known to operate behind our lines<br/>
         • Upon arrival at our base in Mhamid talk to O'Connor<br/>
+    • The unarmed Hunter is your respawn vehicle<br/>
 <br/>"+
 "";
 
