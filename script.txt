@@ -66,5 +66,9 @@ publicVariableServer "task_1_2_skip";
 [] execVM "main\defend_mhamid.sqf";
 
 Intermissions:
+    • After Secure M'Semrir:
+        !!!FINISH SECURE TASK
+        task_2_1_skip = true;
+        publicVariableServer "task_2_1_skip";
     • After defending:
         • Resume with tasks given prior to the attack
