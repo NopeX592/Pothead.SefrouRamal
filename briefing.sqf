@@ -21,31 +21,29 @@ format [" Authors: %1<br/><br/>",getText (missionconfigfile >> "author")]+
 _roles = "<br/>"+
 "Briefing:<br/>
     General:<br/>
-        • We're working as an independent Faction<br/>
-            • Few NATO and UNA operatives know of our presence<br/>
-            • NATO and UNA have been cooperating<br/>
-            • Tura/SFIA forces have attacked UNA personnel<br/>
-            • Expect attacks by Tura/SFIA<br/>
-            • You may RTB anytime to rearm<br/>
-        • Enemy types to expect:<br/>
-            • Infantry<br/>
-            • Technicals<br/>
-            • Few APCs<br/>
-            • Prior use of IEDs<br/>
-            • SFIA forces stole a helicopter it was last seen circling Bir-Dakhla<br/>
-            • Known checkpoints are marked on the map<br/>
-            • Check your fire civilians are still in the area<br/>
-            • Enemy forces have redeployed into cities you've attack before<br/>
-        • Civilians are still in cities check your fire<br/>
-<br/>
-    Extract UNA members:<br/>
-        • Intel Indicates that UNA is in Bir-Dakhla<br/>
-        • Considerable defences<br/>
-        • Analysts marked the estimated position on the map<br/>
-<br/>
-    Support:<br/>
-        • Supply drop<br/>
-            • If called in Tura will most likely respond<br/>
+    • NATOs Objective:<br/>
+        • NATO forces are in the process of encircling the local Airbase<br/>
+        • If successful we expect encircled enemy forces to surrender<br/>
+        • We're here to support them in any way possible<br/>
+    • You're working as military contractors<br/>
+        • NATO and UNA have been cooperating<br/>
+        • Expect attacks by Tura/SFIA<br/>
+        • You may RTB anytime to rearm<br/>
+        • Opfor forces have been supporting independent forces<br/>
+    • Enemy types to expect:<br/>
+        • Infantry<br/>
+        • Technicals<br/>
+        • Few APCs<br/>
+        • Prior use of IEDs<br/>
+        • Known Enemy checkpoints are marked on the map<br/>
+        • Known Enemy movements are marked on the map<br/>
+        • Civilians have remained in contested cities<br/>
+    • Your task:<br/>
+        • Transport ammo and equipment to Mhamid<br/>
+        • Do not drive through M'Semrir<br/>
+        • MRAPs have been provided and are outside<br/>
+        • Independent forces are known to operate behind our lines<br/>
+        • Upon arrival at our base in Mhamid talk to O'Connor<br/>
 <br/>"+
 "";
 

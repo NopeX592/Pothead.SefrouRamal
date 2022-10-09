@@ -5,21 +5,64 @@ Deliver Supplies 🡺 Get Secondary Brief 🡺 Call in Airstrike                
 
 1st Briefing:
     General:
-        • NATOs Objective:
-            • NATO forces are in the process of encircling the local Airbase
-            • We're here to support them in any way possible
-        • You're working as military contractors
-            • NATO and UNA have been cooperating
-            • Expect attacks by Tura/SFIA
-            • You may RTB anytime to rearm
-            • Opfor forces have been supporting independent forces
-        • Enemy types to expect:
-            • Infantry
-            • Technicals
-            • Few APCs
-            • Prior use of IEDs
-            • Known Enemy checkpoints are marked on the map
-            • Known Enemy movements are marked on the map
-            • Civilians have remained in contested cities
+    • NATOs Objective:
+        • NATO forces are in the process of encircling the local Airbase
+        • If successful we expect encircled enemy forces to surrender
+        • We're here to support them in any way possible
+    • You're working as military contractors
+        • NATO and UNA have been cooperating
+        • Expect attacks by Tura/SFIA
+        • You may RTB anytime to rearm
+        • Opfor forces have been supporting independent forces
+    • Enemy types to expect:
+        • Infantry
+        • Technicals
+        • Few APCs
+        • Prior use of IEDs
+        • Known Enemy checkpoints are marked on the map
+        • Known Enemy movements are marked on the map
+        • Civilians have remained in contested cities
+    • Your task:
+        • Transport ammo and equipment to Mhamid
+        • Do not drive through M'Semrir
+        • MRAPs have been provided and are outside
+        • Independent forces are known to operate behind our lines
+        • Upon arrival at our base in Mhamid talk to O'Connor
+!!!FINISH BRIEFING TASK
+task_0_1_skip = true;
+publicVariableServer "task_0_1_skip";
+
+2nd Briefing:
+    • Your tasks:
+        • Support EOD:
+            • You are supposed to support our EOD team
+            • Friendly forces have been using cluster munitions
+            • To keep on the good side with locals we are to clear the UXO
+            • As M'Semrir is held by Independent forces we need you to clear the marked zone
+            • Once the zone is cleared call it in to me, the EOD team will embark shortly
+            • When the EOD team arrives your task is to protect them from enemy forces
+            • Once they're done you are to RTB to Mhamid
+        • Transport POI:
+            • We need you to pickup an enemy deserter from our forces currently positioned at Comms Alpha
+            • Upon arrival at Comms Alpha our forces will hand over the desert to you
+            • Bring the deserter back to me
+            • It is vital that the desert is not harmed as they posses very important information
+        • (MAYBE) Destroy Military Base:
+            • On your way to the POI there is an Enemy held military base
+            • We need you to destroy most of the vehicles so that our forces can capture the base
+            • I'd reccomend doing this task on your way to the POI
+!!!FINISH BRIEFING TASK
+task_1_2_skip = true;
+publicVariableServer "task_1_2_skip";
+
+3rd Briefing:
+    • After either EOD or POI done:
+        • We have received intel that enemy forces are moving in on our position
+        • I need you to assume defensive position and support my troops in defending this town
+        • We expect there to be enough time for you to rearm
+!!!EXECUTE DEFEND TASK 
+[] execVM "main\defend_mhamid.sqf";
 
 Intermissions:
+    • After defending:
+        • Resume with tasks given prior to the attack
