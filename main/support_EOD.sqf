@@ -18,7 +18,7 @@ _marker_clear_EOD = createMarker ["Secure M'Semrir", getMarkerPos "clear_EOD"];
 	_marker_clear_EOD setMarkerSize [50, 50];
 
 while {_run} do {
-	if (task_2_1_skip) then {
+	if ((triggerActivated clear_EOD) || (task_2_1_skip)) then {
 		task_2_1 setTaskState "Succeeded";
 		["TaskSucceeded",["","Secure M'Semrir"]] call BIS_fnc_showNotification;
 		deleteMarker _marker_clear_EOD;
