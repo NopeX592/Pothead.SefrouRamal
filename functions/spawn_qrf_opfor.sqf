@@ -74,24 +74,28 @@ params [
 		};
 	
 	//Order Get In Vehicle
-	_wp_move_1 = _qrf_group addWaypoint [_location_start, 0];
-		_wp_move_1 setWaypointType 'GETIN NEAREST';
-		_wp_move_1 setWaypointSpeed 'FULL';
+	_wp_move_getIn = _qrf_group addWaypoint [_location_start, 0];
+		_wp_move_getIn setWaypointType 'GETIN NEAREST';
+		_wp_move_getIn setWaypointSpeed 'FULL';
+		_wp_move_getIn setWaypointCombatMode "RED";
 
 	//Order to Target
 	_wp_move_1 = _qrf_group addWaypoint [_location_end, 1];
 		_wp_move_1 setWaypointType 'MOVE';
 		_wp_move_1 setWaypointSpeed 'FULL';
 		[_qrf_group, 1] setWaypointCompletionRadius 150;
+		_wp_move_1 setWaypointCombatMode "RED";
 
 	//Order Get Out
 	_wp_getOut = _qrf_group addWaypoint [_location_end, 2];
 		_wp_getOut setWaypointType 'GETOUT';
 		_wp_getOut setWaypointSpeed 'FULL';
+		_wp_getOut setWaypointCombatMode "RED";
 
 	//Order SAD
 	_wp_sad = _qrf_group addWaypoint [_location_end, 3];
 		_wp_sad setWaypointType 'SAD';
 		_wp_sad setWaypointSpeed 'FULL';
 		[_qrf_group, 1] setWaypointCompletionRadius 35;
+		_wp_sad setWaypointCombatMode "RED";
 };
