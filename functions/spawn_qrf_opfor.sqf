@@ -36,19 +36,19 @@ params [
 
 			//Spawn Vehicle
 			if (_amount <= 1) then {
-				vehicleSpawn = "I_G_Offroad_01_F" createVehicle _location_start;
+				vehicleSpawn = "I_Tura_Offroad_armor_lxWS" createVehicle _location_start;
 				} else {
 				vehicleSpawn = "I_G_Van_01_transport_F" createVehicle _location_start;
 			};
 
 			//Spawn Mandatory
-			squad_lead = "I_G_Soldier_SL_F" createUnit [_location_start, _qrf_group];
-			auto_rifle = "I_G_Soldier_AR_F" createUnit [_location_start, _qrf_group];
-			grenadier = "I_G_Soldier_GL_F" createUnit [_location_start, _qrf_group];
+			squad_lead = "I_Tura_deserter_lxWS" createUnit [_location_start, _qrf_group];
+			auto_rifle = "I_Tura_HeavyGunner_lxWS" createUnit [_location_start, _qrf_group];
+			grenadier = "I_SFIA_medic2_lxWS" createUnit [_location_start, _qrf_group];
 
 			//Spawn Riflemen
 			for "_i" from 1 to _amount step 1 do {
-				rifle_man = "I_G_Soldier_F" createUnit [_location_start, _qrf_group];
+				rifle_man = "I_SFIA_enforcer_lxWS" createUnit [_location_start, _qrf_group];
 			};
 
 		} else {
@@ -73,6 +73,11 @@ params [
 			};
 		};
 	
+	//Order Get In Vehicle
+	_wp_move_1 = _qrf_group addWaypoint [_location_start, 0];
+		_wp_move_1 setWaypointType 'GETIN NEAREST';
+		_wp_move_1 setWaypointSpeed 'FULL';
+
 	//Order to Target
 	_wp_move_1 = _qrf_group addWaypoint [_location_end, 1];
 		_wp_move_1 setWaypointType 'MOVE';
