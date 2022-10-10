@@ -15,7 +15,7 @@ task_2_1 = player createSimpleTask ["Secure M'Semrir"];
 
 _marker_clear_EOD = createMarker ["Secure M'Semrir", getMarkerPos "clear_EOD"];
 	_marker_clear_EOD setMarkerShape "ELLIPSE";
-	_marker_clear_EOD setMarkerSize [50, 50];
+	_marker_clear_EOD setMarkerSize [200, 200];
 
 while {_run} do {
 	if ((triggerActivated clear_EOD) || (task_2_1_skip)) then {
@@ -35,5 +35,6 @@ while {_run} do {
 	};
 	if (task_3_1_fin) then {
 		_run = false;
+		deleteMarker _marker_clear_EOD;
 	};
 };

@@ -11,7 +11,7 @@ task_3_2 = player createSimpleTask ["Dropoff POI"];
 
 _marker_dropoff_POI = createMarker ["Dropoff POI", getMarkerPos "poi_dropoff"];
 	_marker_dropoff_POI setMarkerShape "ELLIPSE";
-	_marker_dropoff_POI setMarkerSize [25, 25];
+	_marker_dropoff_POI setMarkerSize [10, 10];
 
 while {_run} do {
 	if ((triggerActivated poi_dropoff_trigger) || (task_3_2_skip)) then {

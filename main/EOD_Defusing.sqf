@@ -32,4 +32,4 @@ _wp_uxo_6 = EOD_Team addWaypoint [getMarkerPos "marker_uxo_6", 1.5];
 	_wp_uxo_6 setWaypointSpeed "LIMITED";
 _script_uxo_6 = EOD_Team addWaypoint [getMarkerPos "marker_uxo_6", 1.5];
 	_script_uxo_6 setWaypointType "SCRIPTED";
-	_script_uxo_6 setWaypointScript "functions\defuse_mine_fin.sqf";
+	_script_uxo_6 setWaypointScript "functions\defuse_mine.sqf";

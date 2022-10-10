@@ -11,7 +11,7 @@ task_3_1 = player createSimpleTask ["Pickup POI"];
 
 _marker_pickup_POI = createMarker ["Pickup POI", getMarkerPos "poi_pickup"];
 	_marker_pickup_POI setMarkerShape "ELLIPSE";
-	_marker_pickup_POI setMarkerSize [25, 25];
+	_marker_pickup_POI setMarkerSize [10, 10];
 
 while {_run} do {
 	if ((triggerActivated poi_pickup_trigger) || (task_3_1_skip)) then {
@@ -27,5 +27,6 @@ while {_run} do {
 	};
 	if (task_2_1_fin) then {
 		_run = false;
+		deleteMarker _marker_pickup_POI;
 	};
 };
