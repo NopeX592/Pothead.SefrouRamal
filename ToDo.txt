@@ -1,2 +1,1 @@
-Make POI move
 Make Defend check better

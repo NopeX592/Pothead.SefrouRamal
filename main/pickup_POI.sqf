@@ -19,7 +19,7 @@ while {_run} do {
 		["TaskSucceeded",["","Pickup POI"]] call BIS_fnc_showNotification;
 		deleteMarker _marker_pickup_POI;
 		[POI] join (group player);
-		POI switchMove "";
+		POI switchMove "ANIM";
 		_run = false;
 		[] execVM "main\dropoff_POI.sqf";
 		task_3_1_fin = true;
