@@ -18,8 +18,12 @@ while {_run} do {
 		task_3_2 setTaskState "Succeeded";
 		["TaskSucceeded",["","Dropoff POI"]] call BIS_fnc_showNotification;
 		deleteMarker _marker_dropoff_POI;
-		[POI] join grpNull;
-		POI switchMove "AmovPercMstpSnonWnonDnon_Ease";
 		_run = false;
+
+		//Move POI to Officer
+		[POI] join grpNull;
+		POI doMove (position connor);
+		sleep 10;
+		POI switchMove "AmovPercMstpSnonWnonDnon_Ease";
 	};
 };
