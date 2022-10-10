@@ -11,7 +11,7 @@ task_1_1 = player createSimpleTask ["Deliver Supplies"];
 	task_1_1 setTaskState "Created";
 
 while {_run} do {
-	if ((!alive HEMTT_1 && !alive HEMTT_1) || (task_1_1_fail)) then {
+	if ((!alive HEMTT_1 && !alive HEMTT_2) || (task_1_1_fail)) then {
 		task_1_1 setTaskState "Failed";
 		["TaskFailed",["","Deliver Supplies"]] call BIS_fnc_showNotification;
 		_run = false;
