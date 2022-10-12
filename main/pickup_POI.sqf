@@ -9,17 +9,18 @@ task_3_1 = player createSimpleTask ["Pickup POI"];
 	task_3_1 setTaskState "Assigned";
 	["TaskAssigned",["","Pickup POI"]] call BIS_fnc_showNotification;
 
-_marker_pickup_POI = createMarker ["Pickup POI", getMarkerPos "poi_pickup"];
-	_marker_pickup_POI setMarkerShape "ELLIPSE";
-	_marker_pickup_POI setMarkerSize [10, 10];
+_poi_pickup_area = createMarker ["Pickup POI", getMarkerPos "poi_pickup"];
+	_poi_pickup_area setMarkerShape "RECTANGLE";
+	_poi_pickup_area setMarkerSize [10, 10];
+	_poi_pickup_area setMarkerDir 29.481;
 
 while {_run} do {
-	if ((triggerActivated poi_pickup_trigger) || (task_3_1_skip)) then {
+	if ((POI inArea _poi_pickup_area) || (task_3_1_skip)) then {
 		task_3_1 setTaskState "Succeeded";
 		["TaskSucceeded",["","Pickup POI"]] call BIS_fnc_showNotification;
-		deleteMarker _marker_pickup_POI;
+		deleteMarker _poi_pickup_area;
 		[POI] join (group player);
-		POI switchMove "ANIM";
+		POI enableAI 'PATH';
 		_run = false;
 		[] execVM "main\dropoff_POI.sqf";
 		task_3_1_fin = true;
@@ -27,6 +28,6 @@ while {_run} do {
 	};
 	if (task_2_1_fin) then {
 		_run = false;
-		deleteMarker _marker_pickup_POI;
+		deleteMarker _poi_pickup_area;
 	};
 };

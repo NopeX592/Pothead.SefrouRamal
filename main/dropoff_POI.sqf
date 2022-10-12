@@ -9,15 +9,16 @@ task_3_2 = player createSimpleTask ["Dropoff POI"];
 	task_3_2 setTaskState "Assigned";
 	["TaskAssigned",["","Dropoff POI"]] call BIS_fnc_showNotification;
 
-_marker_dropoff_POI = createMarker ["Dropoff POI", getMarkerPos "poi_dropoff"];
-	_marker_dropoff_POI setMarkerShape "ELLIPSE";
-	_marker_dropoff_POI setMarkerSize [10, 10];
+_poi_dropoff_area = createMarker ["Pickup POI", getMarkerPos "poi_dropoff"];
+	_poi_dropoff_area setMarkerShape "RECTANGLE";
+	_poi_dropoff_area setMarkerSize [10, 10];
+	_poi_dropoff_area setMarkerDir 99.176;
 
 while {_run} do {
-	if ((triggerActivated poi_dropoff_trigger) || (task_3_2_skip)) then {
+	if ((POI inArea _poi_dropoff_area) || (task_3_2_skip)) then {
 		task_3_2 setTaskState "Succeeded";
 		["TaskSucceeded",["","Dropoff POI"]] call BIS_fnc_showNotification;
-		deleteMarker _marker_dropoff_POI;
+		deleteMarker _poi_dropoff_area;
 		_run = false;
 
 		//Move POI to Officer

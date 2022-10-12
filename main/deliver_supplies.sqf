@@ -21,12 +21,14 @@ while {_run} do {
 		["TaskFailed",["","Deliver Supplies"]] call BIS_fnc_showNotification;
 		_run = false;
 		[] execVM "main\get_secondary_brief.sqf";
+		deleteMarker _deliver_area;
 	} else {
-		if (([HEMTT_1,HEMTT_2] inArea _deliver_area) || (task_1_1_skip)) then {
+		if (((HEMTT_1 inArea _deliver_area) && (HEMTT_2 inArea _deliver_area))|| (task_1_1_skip)) then {
 			task_1_1 setTaskState "Succeeded";
 			["TaskSucceeded",["","Deliver Supplies"]] call BIS_fnc_showNotification;
 			_run = false;
 			[] execVM "main\get_secondary_brief.sqf";
+			deleteMarker _deliver_area;
 		};
 	};
 };
