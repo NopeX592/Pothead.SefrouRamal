@@ -1,3 +1,4 @@
+make qrf get out of vehicle earlier
 Remove Anti Air Base
 Increase Mhamid Attack
 Reduce NATO in Mhamid

@@ -11,13 +11,13 @@ task_1_1 = player createSimpleTask ["Deliver Supplies"];
 	task_1_1 setTaskState "Created";
 
 while {_run} do {
-	if ((!alive HEMTT_1 && !alive HEMTT_2) || (task_1_1_fail)) then {
+	if (((!alive HEMTT_1) && (!alive HEMTT_2)) || (task_1_1_fail)) then {
 		task_1_1 setTaskState "Failed";
 		["TaskFailed",["","Deliver Supplies"]] call BIS_fnc_showNotification;
 		_run = false;
 		[] execVM "main\get_secondary_brief.sqf";
 	} else {
-		if ((triggerActivated deliver_dropoff_trigger_1 && triggerActivated deliver_dropoff_trigger_2) || (task_1_1_skip)) then {
+		if (((triggerActivated deliver_dropoff_trigger_1) && (triggerActivated deliver_dropoff_trigger_2)) || (task_1_1_skip)) then {
 			task_1_1 setTaskState "Succeeded";
 			["TaskSucceeded",["","Deliver Supplies"]] call BIS_fnc_showNotification;
 			_run = false;

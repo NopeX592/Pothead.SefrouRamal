@@ -13,8 +13,6 @@ _marker_defend_EOD = createMarker ["Defend the EOD team", getMarkerPos "defend_E
 	_marker_defend_EOD setMarkerShape "ELLIPSE";
 	_marker_defend_EOD setMarkerSize [50, 50];
 
-[] execVM "main\EOD_Defusing.sqf";
-
 while {_run} do {
 	if ((!alive UXO_6) || (task_2_2_skip)) then {
 		task_2_2 setTaskState "Succeeded";

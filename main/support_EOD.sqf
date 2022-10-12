@@ -26,6 +26,9 @@ while {_run} do {
 		[] execVM "main\defend_EOD.sqf";
 		//Move EOD in to M'Semrir
 		Hunter_EOD setPos (getMarkerPos "hunter_teleport");
+		Hunter_EODA enableAI "PATH";
+		Hunter_EODE enableAI "PATH";
+		Hunter_EODD enableAI "PATH";
 		task_2_1_wp_skip = true;
 		task_2_1_qrf = true;
 		task_2_1_fin = true;
