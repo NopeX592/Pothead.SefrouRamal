@@ -32,13 +32,12 @@ while {_run_2} do {
 	};
 };
 
-
 while {_run_1} do {
 	if ((task_4_1_qrf_spawned) || (task_4_1_skip)) then {
 		curr_unitsNumber = { !(isPlayer _x) and { (side _x) == independent } and { _x inArea _marker_defend_mhamid } } count allUnits;
 		publicVariableServer "curr_unitsNumber";
 
-		if ((curr_unitsNumber < initial_unitsNumber) || (task_4_1_skip)) then {
+		if ((curr_unitsNumber <= initial_unitsNumber) || (task_4_1_skip)) then {
 			task_4_1 setTaskState "Succeeded";
 			["TaskSucceeded",["","Defend the town of Mhamid"]] call BIS_fnc_showNotification;
 			_run_1 = false;

@@ -1,3 +1,8 @@
 make qrf get out of vehicle earlier
 Increase Mhamid Attack
-assign tasks
+Remove Second Ifrit
+POI pickup area bigger
+make apc and ifrit move
+move enemy spawn
+increase squad size defend
+decrease defend check time

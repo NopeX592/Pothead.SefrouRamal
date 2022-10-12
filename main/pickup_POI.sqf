@@ -15,10 +15,10 @@ _poi_pickup_area = createMarker ["Pickup POI", getMarkerPos "poi_pickup"];
 	_poi_pickup_area setMarkerDir 29.481;
 
 while {_run} do {
-	if ((POI inArea _poi_pickup_area) || (task_3_1_skip)) then {
+	if ((squad_leader inArea _poi_pickup_area) || (task_3_1_skip)) then {
 		task_3_1 setTaskState "Succeeded";
 		["TaskSucceeded",["","Pickup POI"]] call BIS_fnc_showNotification;
-		deleteMarker _poi_pickup_area;
+		_poi_pickup_area setMarkerAlpha 0;
 		[POI] join (group player);
 		POI enableAI 'PATH';
 		_run = false;
@@ -28,6 +28,6 @@ while {_run} do {
 	};
 	if (task_2_1_fin) then {
 		_run = false;
-		deleteMarker _poi_pickup_area;
+		_poi_pickup_area setMarkerAlpha 0;
 	};
 };
