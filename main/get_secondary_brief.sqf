@@ -1,6 +1,6 @@
 _run = true;
 task_1_2_skip = false;
-publicVariableServer "task_1_2_skip";
+publicVariable "task_1_2_skip";
 
 task_1_2 = player createSimpleTask ["Get Briefing"];
 	task_1_2 setSimpleTaskDescription ["Get your Briefing.","Get Briefing",""];
@@ -15,7 +15,6 @@ while {_run} do {
 		["TaskSucceeded",["","Get Briefing"]] call BIS_fnc_showNotification;
 		_run = false;
 		[] execVM "main\support_EOD.sqf";
-		[] execVM "main\call_airstrike.sqf";
 		[] execVM "main\pickup_POI.sqf";
 	};
 };

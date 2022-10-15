@@ -1,8 +1,8 @@
 _run = true;
 task_1_1_skip = false;
 task_1_1_fail = false;
-publicVariableServer "task_1_1_skip";
-publicVariableServer "task_1_1_fail";
+publicVariable "task_1_1_skip";
+publicVariable "task_1_1_fail";
 
 task_1_1 = player createSimpleTask ["Deliver Supplies"];
 	task_1_1 setSimpleTaskDescription ["Deliver the Supplies to Mhamid.","Deliver the Supplies to Mhamid",""];
@@ -23,6 +23,6 @@ while {_run} do {
 		[] execVM "main\get_secondary_brief.sqf";
 		_deliver_area setMarkerAlpha 0;
 		task_1_1_skip = true;
-		publicVariableServer "task_1_1_skip";
+		publicVariable "task_1_1_skip";
 	};
 };

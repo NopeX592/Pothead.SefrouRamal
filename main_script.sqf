@@ -3,10 +3,10 @@ task_0_1_skip = false;
 task_2_1_fin = false;
 task_3_1_fin = false;
 task_4_1_fin = false;
-publicVariableServer "task_0_1_skip";
-publicVariableServer "task_2_1_fin";
-publicVariableServer "task_3_1_fin";
-publicVariableServer "task_4_1_fin";
+publicVariable "task_0_1_skip";
+publicVariable "task_2_1_fin";
+publicVariable "task_3_1_fin";
+publicVariable "task_4_1_fin";
 
 task_0_1 = player createSimpleTask ["Get Briefing"];
 	task_0_1 setSimpleTaskDescription ["Get your Briefing.","Get Briefing",""];

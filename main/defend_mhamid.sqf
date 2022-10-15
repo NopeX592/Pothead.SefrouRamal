@@ -4,10 +4,10 @@ task_4_1_skip = false;
 task_4_1_qrf = true;
 task_4_1_fin = true;
 task_4_1_qrf_spawned = false;
-publicVariableServer "task_4_1_skip";
-publicVariableServer "task_4_1_qrf";
-publicVariableServer "task_4_1_fin";
-publicVariableServer "task_4_1_qrf_spawned";
+publicVariable "task_4_1_skip";
+publicVariable "task_4_1_qrf";
+publicVariable "task_4_1_fin";
+publicVariable "task_4_1_qrf_spawned";
 
 task_4_1 = player createSimpleTask ["Defend the town of Mhamid"];
 	task_4_1 setSimpleTaskDescription ["Defend the town of Mhamid.","Defend the town of Mhamid",""];
@@ -27,7 +27,7 @@ while {_run_2} do {
 	if ((task_4_1_qrf_spawned) || (task_4_1_skip)) then {
 		initial_unitsNumber = { !(isPlayer _x) and { (side _x) == independent } and { _x inArea _marker_defend_mhamid } } count allUnits;
 		initial_unitsNumber = initial_unitsNumber * 0.2;
-		publicVariableServer "initial_unitsNumber";
+		publicVariable "initial_unitsNumber";
 		_run_2 = false;
 	};
 };
@@ -35,7 +35,7 @@ while {_run_2} do {
 while {_run_1} do {
 	if ((task_4_1_qrf_spawned) || (task_4_1_skip)) then {
 		curr_unitsNumber = { !(isPlayer _x) and { (side _x) == independent } and { _x inArea _marker_defend_mhamid } } count allUnits;
-		publicVariableServer "curr_unitsNumber";
+		publicVariable "curr_unitsNumber";
 
 		if ((curr_unitsNumber <= initial_unitsNumber) || (task_4_1_skip)) then {
 			task_4_1 setTaskState "Succeeded";
@@ -51,9 +51,9 @@ while {_run_1} do {
 			task_2_1_fin = false;
 			task_3_1_fin = false;
 			task_4_1_skip = true;
-			publicVariableServer "task_2_1_fin";
-			publicVariableServer "task_3_1_fin";
-			publicVariableServer "task_4_1_skip";
+			publicVariable "task_2_1_fin";
+			publicVariable "task_3_1_fin";
+			publicVariable "task_4_1_skip";
 		};
 	};
 };

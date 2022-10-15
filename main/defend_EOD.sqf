@@ -1,6 +1,6 @@
 _run = true;
 task_2_2_skip = false;
-publicVariableServer "task_2_2_skip";
+publicVariable "task_2_2_skip";
 
 task_2_2 = player createSimpleTask ["Defend the EOD team"];
 	task_2_2 setSimpleTaskDescription ["Defend the EOD team.","Defend the EOD team",""];
@@ -25,6 +25,6 @@ while {_run} do {
 			[] execVM "main\rtb_base.sqf";
 		};
 		task_2_2_skip = true;
-		publicVariableServer "task_2_2_skip";
+		publicVariable "task_2_2_skip";
 	};
 };

@@ -1,2 +1,8 @@
-fix POI pickup event
-fix POI dropoff event
+move enemy spawn from trigger to mission file
+move nato in prayer tower
+fix math
+extend timer for Mhamid
+fix defend mhamid mission
+fix secure semrir
+fix eod disembarking
+fix eod mission end

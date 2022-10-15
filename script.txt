@@ -31,7 +31,7 @@ Deliver Supplies 🡺 Get Secondary Brief 🡺 Call in Airstrike                
     • The unarmed Hunter is your respawn vehicle
 !!!FINISH BRIEFING TASK
 task_0_1_skip = true;
-publicVariableServer "task_0_1_skip";
+publicVariable "task_0_1_skip";
 
 2nd Briefing:
     • Your tasks:
@@ -55,7 +55,7 @@ publicVariableServer "task_0_1_skip";
         • The unarmed Hunter is your respawn vehicle
 !!!FINISH BRIEFING TASK
 task_1_2_skip = true;
-publicVariableServer "task_1_2_skip";
+publicVariable "task_1_2_skip";
 
 3rd Briefing:
     • After either EOD or POI done:
@@ -69,6 +69,6 @@ Intermissions:
     • After Secure M'Semrir:
         !!!FINISH SECURE TASK
         task_2_1_skip = true;
-        publicVariableServer "task_2_1_skip";
+        publicVariable "task_2_1_skip";
     • After defending:
         • Resume with tasks given prior to the attack

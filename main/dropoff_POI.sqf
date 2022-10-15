@@ -1,6 +1,6 @@
 _run = true;
 task_3_2_skip = false;
-publicVariableServer "task_3_2_skip";
+publicVariable "task_3_2_skip";
 
 task_3_2 = player createSimpleTask ["Dropoff POI"];
 	task_3_2 setSimpleTaskDescription ["Dropoff the POI at our base in Mhamid.","Dropoff POI",""];
@@ -15,7 +15,7 @@ _poi_dropoff_area = createMarker ["Dropoff POI", getMarkerPos "poi_dropoff"];
 	_poi_dropoff_area setMarkerDir 99.176;
 
 while {_run} do {
-	if ((squad_leader inArea _poi_dropoff_area) || (task_3_2_skip)) then {
+	if ((player inArea _poi_dropoff_area) || (task_3_2_skip)) then {
 		task_3_2 setTaskState "Succeeded";
 		["TaskSucceeded",["","Dropoff POI"]] call BIS_fnc_showNotification;
 		_poi_dropoff_area setMarkerAlpha 0;
@@ -27,6 +27,6 @@ while {_run} do {
 		sleep 10;
 		POI switchMove "AmovPercMstpSnonWnonDnon_Ease";
 		task_3_2_skip = true;
-		publicVariableServer "task_3_2_skip";
+		publicVariable "task_3_2_skip";
 	};
 };
