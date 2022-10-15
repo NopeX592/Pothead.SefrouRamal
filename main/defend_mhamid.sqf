@@ -24,7 +24,7 @@ _marker_defend_mhamid = createMarker ["Dropoff POI", getMarkerPos "defend_area_m
 
 //Get initial units
 while {_run_2} do {
-	if (task_4_1_qrf_spawned) then {
+	if ((task_4_1_qrf_spawned) || (task_4_1_skip)) then {
 		initial_unitsNumber = { !(isPlayer _x) and { (side _x) == independent } and { _x inArea _marker_defend_mhamid } } count allUnits;
 		initial_unitsNumber = initial_unitsNumber * 0.2;
 		publicVariableServer "initial_unitsNumber";
@@ -50,8 +50,10 @@ while {_run_1} do {
 			};
 			task_2_1_fin = false;
 			task_3_1_fin = false;
+			task_4_1_skip = true;
 			publicVariableServer "task_2_1_fin";
 			publicVariableServer "task_3_1_fin";
+			publicVariableServer "task_4_1_skip";
 		};
 	};
 };

@@ -24,5 +24,7 @@ while {_run} do {
 		} else {
 			[] execVM "main\rtb_base.sqf";
 		};
+		task_2_2_skip = true;
+		publicVariableServer "task_2_2_skip";
 	};
 };

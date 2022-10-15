@@ -1,8 +1,4 @@
 make qrf get out of vehicle earlier
-Increase Mhamid Attack
-Remove Second Ifrit
-POI pickup area bigger
-make apc and ifrit move
-move enemy spawn
-increase squad size defend
-decrease defend check time
+
+fix POI pickup event
+fix POI dropoff event

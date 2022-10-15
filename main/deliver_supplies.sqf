@@ -16,19 +16,13 @@ _deliver_area = createMarker ["Deliver Area", getMarkerPos "deliver_marker"];
 	_deliver_area setMarkerDir 8.773;
 
 while {_run} do {
-	if (((!alive HEMTT_1) && (!alive HEMTT_2)) || (task_1_1_fail)) then {
-		task_1_1 setTaskState "Failed";
-		["TaskFailed",["","Deliver Supplies"]] call BIS_fnc_showNotification;
+	if (((HEMTT_1 inArea _deliver_area) && (HEMTT_2 inArea _deliver_area))|| (task_1_1_skip)) then {
+		task_1_1 setTaskState "Succeeded";
+		["TaskSucceeded",["","Deliver Supplies"]] call BIS_fnc_showNotification;
 		_run = false;
 		[] execVM "main\get_secondary_brief.sqf";
 		_deliver_area setMarkerAlpha 0;
-	} else {
-		if (((HEMTT_1 inArea _deliver_area) && (HEMTT_2 inArea _deliver_area))|| (task_1_1_skip)) then {
-			task_1_1 setTaskState "Succeeded";
-			["TaskSucceeded",["","Deliver Supplies"]] call BIS_fnc_showNotification;
-			_run = false;
-			[] execVM "main\get_secondary_brief.sqf";
-			_deliver_area setMarkerAlpha 0;
-		};
+		task_1_1_skip = true;
+		publicVariableServer "task_1_1_skip";
 	};
 };

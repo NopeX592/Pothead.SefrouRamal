@@ -29,12 +29,14 @@ while {_run} do {
 		Hunter_EODA enableAI "PATH";
 		Hunter_EODE enableAI "PATH";
 		Hunter_EODD enableAI "PATH";
+		task_2_1_skip = true;
 		task_2_1_wp_skip = true;
 		task_2_1_qrf = true;
 		task_2_1_fin = true;
 		publicVariableServer "task_2_1_wp_skip";
 		publicVariableServer "task_2_1_qrf";
 		publicVariableServer "task_2_1_fin";
+		publicVariableServer "task_2_1_skip";
 	};
 	if (task_3_1_fin) then {
 		_run = false;

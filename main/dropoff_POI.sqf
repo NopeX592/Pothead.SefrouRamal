@@ -11,7 +11,7 @@ task_3_2 = player createSimpleTask ["Dropoff POI"];
 
 _poi_dropoff_area = createMarker ["Dropoff POI", getMarkerPos "poi_dropoff"];
 	_poi_dropoff_area setMarkerShape "RECTANGLE";
-	_poi_dropoff_area setMarkerSize [10, 10];
+	_poi_dropoff_area setMarkerSize [15, 15];
 	_poi_dropoff_area setMarkerDir 99.176;
 
 while {_run} do {
@@ -26,5 +26,7 @@ while {_run} do {
 		POI doMove (position connor);
 		sleep 10;
 		POI switchMove "AmovPercMstpSnonWnonDnon_Ease";
+		task_3_2_skip = true;
+		publicVariableServer "task_3_2_skip";
 	};
 };

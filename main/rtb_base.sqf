@@ -15,5 +15,7 @@ while {_run} do {
 		task_5_1 setTaskState "Succeeded";
 		["TaskSucceeded",["","Return to the FOB"]] call BIS_fnc_showNotification;
 		_run = false;
+		task_5_1_skip = true;
+		publicVariableServer "task_5_1_skip";
 	};
 };

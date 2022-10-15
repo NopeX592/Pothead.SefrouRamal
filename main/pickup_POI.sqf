@@ -11,7 +11,7 @@ task_3_1 = player createSimpleTask ["Pickup POI"];
 
 _poi_pickup_area = createMarker ["Pickup POI", getMarkerPos "poi_pickup"];
 	_poi_pickup_area setMarkerShape "RECTANGLE";
-	_poi_pickup_area setMarkerSize [10, 10];
+	_poi_pickup_area setMarkerSize [15, 15];
 	_poi_pickup_area setMarkerDir 29.481;
 
 while {_run} do {
@@ -24,7 +24,9 @@ while {_run} do {
 		_run = false;
 		[] execVM "main\dropoff_POI.sqf";
 		task_3_1_fin = true;
+		task_3_1_skip = true;
 		publicVariableServer "task_3_1_fin";
+		publicVariableServer "task_3_1_skip";
 	};
 	if (task_2_1_fin) then {
 		_run = false;
