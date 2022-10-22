@@ -48,6 +48,7 @@ publicVariable "task_0_1_skip";
             • Upon arrival at Comms Alpha our forces will hand over the desert to you
             • Bring the deserter back to me
             • It is vital that the desert is not harmed as they posses very important information
+            • They'll only hand over the POI to Squad Leader
         • (MAYBE) Destroy Military Base:
             • On your way to the POI there is an Enemy held military base
             • We need you to destroy most of the vehicles so that our forces can capture the base
@@ -66,9 +67,8 @@ publicVariable "task_1_2_skip";
 [] execVM "main\defend_mhamid.sqf";
 
 Intermissions:
-    • After Secure M'Semrir:
-        !!!FINISH SECURE TASK
-        task_2_1_skip = true;
-        publicVariable "task_2_1_skip";
     • After defending:
         • Resume with tasks given prior to the attack
+        !!!FINISH DEFEND TASK 
+        task_4_1_skip = true;
+        publicVariable "task_4_1_skip";

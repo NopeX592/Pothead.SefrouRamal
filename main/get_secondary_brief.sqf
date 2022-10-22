@@ -14,7 +14,7 @@ while {_run} do {
 		task_1_2 setTaskState "Succeeded";
 		["TaskSucceeded",["","Get Briefing"]] call BIS_fnc_showNotification;
 		_run = false;
-		[] execVM "main\support_EOD.sqf";
+		[] execVM "main\secure_EOD.sqf";
 		[] execVM "main\pickup_POI.sqf";
 	};
 };
